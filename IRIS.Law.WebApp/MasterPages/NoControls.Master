@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NoControls.master.cs" Inherits="IRIS.Law.WebApp.MasterPages.NoControls" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<link id="MasterLink" href="~/CSS/Master.css" rel="Stylesheet" type="text/css" runat="server" />
+	<link id="Link1" href="~/CSS/niftyCorners.css" rel="stylesheet" type="text/css" runat="server" />
+	<link id="Link2" href="~/CSSHandler.ashx" rel="stylesheet" type="text/css" runat="server" />
+
+</head>
+<body>
+	<form id="form1" runat="server">
+	<div id="bubble_tooltip" class="errorMessageTooltip">
+	</div>
+	
+
+	<script type="text/javascript">
+
+
+	    function pageload() {
+	        obj = document.getElementById('logo');
+
+	        var browser = navigator.appName;
+	        var img;
+
+	        if (browser == "Microsoft Internet Explorer") {
+	            img = getStyle('logo', 'backgroundImage');
+	        }
+	        else {
+	            img = getStyle('logo', 'background-Image');
+	        }
+
+	        img = img.replace("url(", "").replace(")", "");  
+
+	        var length = img.length;
+
+	        if (browser == "Microsoft Internet Explorer") {
+	            img = img.substring(1, length - 1);
+	        }
+ 
+	        Trobj = document.getElementById('logoHeight');
+
+	        //if (browser == "Netscape") 
+	        //{ 
+	            var OldHtml = Trobj.innerHTML;
+	            var NewHeight = getImgSize(img) + 10 + "px";
+                
+	            Trobj.innerHTML = OldHtml + "<div style='height:" + NewHeight + "; width:100%'>&nbsp;</div>";
+	        //}
+	        //else 
+	        //{
+	        //    Trobj.style.height = getImgSize(img) + 10 + "px";
+	        //}
+	    }
+
+         function getImgSize(imgSrc) {
+             var newImg = new Image();
+             newImg.src = imgSrc;
+
+             var IndexSrc = newImg.src;
+             var Start = IndexSrc.indexOf('%22');
+
+             if (Start > 0) {
+
+                 var End = IndexSrc.lastIndexOf('%22');
+
+                 newImg.src = IndexSrc.substring(Start + 3, End);
+
+             }
+             
+             var height = newImg.height;
+             var width = newImg.width;
+             
+             window.setTimeout(newImg, 0); 
+
+             return height;
+             
+         }
+     
+         function getStyle(el, styleProp) {
+             var x = document.getElementById(el);
+             if (x.currentStyle)
+                 var y = x.currentStyle[styleProp];
+             else if (window.getComputedStyle)
+                 var y = document.defaultView.getComputedStyle(x, null).getPropertyValue(styleProp);
+             return y;
+         }
+
+
+         $(document).ready(pageload);
+
+    </script>
+
+	
+	<ajaxToolkit:ToolkitScriptManager ID="_scriptManager" EnablePartialRendering="<%$ BrowserSwitch:IsNotSafari %>" runat="server" CombineScripts="false">
+		<Scripts>
+			<asp:ScriptReference Path="~/Javascript/Common.js" />
+			<asp:ScriptReference Path="~/Javascript/Bubble-Tooltip.js" />
+			<asp:ScriptReference Path="~/Javascript/jquery-1.3.2.js" />
+			<asp:ScriptReference Path="~/Javascript/niftycube.js" />
+			<asp:ScriptReference Path="~/Javascript/Safari3AjaxHack.js" />
+		</Scripts>
+	</ajaxToolkit:ToolkitScriptManager>
+	<div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr> <!-- ROW --> <!-- LOGO -->
+			                <td colspan="4">
+			                        <table cellspacing="0" cellpadding="0" style="width:100%">
+			                            <tr>
+							                <td style="width:100%;" colspan="4" class="topBg">
+								                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+									                <tr>
+										                <td style="width:1%;">
+											                &nbsp;
+										                </td>
+										                <td class="logo" id="logo" style="width:100%">
+										                    <div id="logoHeight"></div>
+										                </td>
+										                <td style="width:5%;">
+											                &nbsp;
+										                </td>
+										                <td align="right" style="width:69%;" runat="server" id="_tdFlash">
+										                </td>
+									                </tr>
+								                </table>
+							                </td>
+						                </tr>
+			                        </table>
+			                </td>
+			            </tr>
+						<tr> <!-- ROW -->
+			                <td colspan="4">
+            			        
+			                    <table cellpadding="0" cellspacing="0" style="width:100%; height:100%">
+                                    <tr> <!-- ROW -->
+                                        <td colspan="3" class="HeaderTab">
+                                            
+                                            <table cellpadding="0" cellspacing="0" style="width:100%">
+                                                <tr> <!-- ROW -->
+                                                    <td style="text-align:left">
+                                                        <asp:UpdatePanel ID="_updPnlMaster" runat="server">
+	                                                        <ContentTemplate>
+		                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	                                                        </ContentTemplate>
+                                                        </asp:UpdatePanel>
+                                                    </td>
+                                                    <td style="text-align:right">
+                                                        &nbsp;
+                                                    </td>
+                                                </tr>
+                                            </table> 
+                                        </td>
+                                    </tr>
+                                </table>  
+            					
+			                </td>
+			            </tr>
+						<tr> <!-- ROW --> <!-- Main Container -->
+				            <td>
+				            <div class="MainContainer" style="padding-top:12px;  padding-bottom:12px">
+					            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed">  
+						            <tr>
+							            <td style="width:10px">&nbsp;</td>
+							            <td style="width:200px" valign="top"> <!-- Main Menu -->
+            							    
+							                    &nbsp;
+                                        </td>
+							            <td style="width:10px">&nbsp;</td>
+							            <td valign="top" style="padding-right:10px">
+						                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+							                    <tr>
+								                    <td valign="top"> 
+								                            <table cellpadding="0" cellspacing="0" style="width:100%; table-layout:fixed; text-align:left">
+								                                <tr> <!-- ROW -->
+								                                    <td>
+								                                        <asp:Panel ID="_PnlContentContainer1" runat="server" style="width:100%; background-color:White">
+									                                    </asp:Panel>
+								                                    </td> 
+								                                </tr>
+								                                <tr style="background-color:White"> <!-- ROW -->
+								                                    <td style="padding-left:20px; padding-right:20px; height:300px; vertical-align:top">
+									                                        <asp:ScriptManagerProxy runat="server" ID="_smp">
+                                                                                <Scripts>
+                                                                                    <asp:ScriptReference Path="~/Javascript/Validation.js"/>
+                                                                                </Scripts>
+                                                                            </asp:ScriptManagerProxy>
+
+									                                        <asp:ContentPlaceHolder ID="_cphMain" runat="server" />
+								                                    </td> 
+								                                </tr>
+								                                <tr> <!-- ROW -->
+								                                    <td>
+								                                        <asp:Panel ID="_PnlContentContainer2" runat="server" style="width:100%; background-color:White">
+									                                    </asp:Panel>
+								                                    </td> 
+								                                </tr>
+								                            </table> 
+            								                
+            								                
+								                    </td>
+							                    </tr>
+						                    </table>
+							            </td>
+						            </tr> 
+					            </table>
+					            </div>
+				            </td>
+			            </tr>
+			            <tr> <!-- ROW -->
+			                <td>
+			                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed">
+			                    <tr> <!-- ROW -->
+                                        <td colspan="4" class="FooterTab"> 
+                                            
+                                                <table cellpadding="0" cellspacing="0" style="width:100%">
+                                                    <tr> <!-- ROW -->
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </table>
+                                            
+                                        </td>
+                                    </tr>
+						            <tr>
+							            <td colspan="4" >
+								            <table width="100%" border="0" cellspacing="0" cellpadding="0" class="BottomLabels">
+									            <tr>
+										            <td style="width: 45%">
+										                &nbsp;
+										            </td>
+										            <td style="width: 55%" align="right">
+											            
+											                &nbsp;
+											            
+										            </td>
+									            </tr>
+								            </table>
+							            </td>
+						            </tr>
+						            </table>
+			                        </td>
+			                    </tr>
+		                    </table>
+		                </td>
+		            </tr>
+		            </table>
+	            </div>
+	</form>
+	
+	
+</body>
+</html>

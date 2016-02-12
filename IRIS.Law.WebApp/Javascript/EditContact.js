@@ -1,0 +1,1 @@
+$("#"+chkArmedForces).click(function(){$("#"+txtArmedForcesNo).attr("readonly",!this.checked);if(this.checked)$("#"+txtArmedForcesNo).removeClass("readonly");else{$("#"+txtArmedForcesNo).addClass("readonly");$("#"+txtArmedForcesNo).val("")}})

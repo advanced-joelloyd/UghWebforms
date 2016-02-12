@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Print.master.cs" Inherits="IRIS.Law.WebApp.MasterPages.Print" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Print Preview</title>
+    <link id="MasterLink" href="~/CSS/Master.css" rel="Stylesheet" type="text/css" runat="server" />
+	<link id="Link1" href="~/CSS/niftyCorners.css" rel="stylesheet" type="text/css" runat="server" />
+	<link id="Link2" href="~/CSSHandler.ashx" rel="stylesheet" type="text/css" runat="server" />
+	
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="bubble_tooltip" class="errorMessageTooltip">
+	</div>
+	<asp:ScriptManager ID="ScriptManager1" EnablePartialRendering="true" runat="server">
+		<Scripts>
+		    <asp:ScriptReference Path="~/Javascript/PrintPreview.js" />
+			<asp:ScriptReference Path="~/Javascript/Common.js" />
+			<asp:ScriptReference Path="~/Javascript/jquery-1.3.2.js" />
+			<asp:ScriptReference Path="~/Javascript/niftycube.js" />
+			<asp:ScriptReference Path="~/Javascript/Safari3AjaxHack.js" />
+
+		</Scripts>
+	</asp:ScriptManager>
+	
+	
+
+	<asp:ContentPlaceHolder ID="_cphMain" runat="server" />
+								        
+	            
+		
+</form>
+     
+</body>
+
+        <% if (Request.QueryString["PrintPage"] != null)
+           {
+               if (Request.QueryString["View"] == "Matter")
+               {   
+        %> 
+            <script type="text/javascript" language="javascript">doEditMatterPrint();</script>
+        <% }
+               else
+               {
+                %>
+                    <script type="text/javascript" language="javascript">doEditClientPrint();</script>
+                <%
+
+               }
+           } %>
+
+</html>

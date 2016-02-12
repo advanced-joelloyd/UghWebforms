@@ -1,0 +1,43 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" /> 
+--%>
+
+<asp:TextBox runat="server" CssClass="textBox" />
+<asp:TextBox runat="server" CssClass="textBoxSmall" SkinId="Small" />
+<asp:TextBox runat="server" CssClass="textBoxLarge" SkinId="Large" />
+<asp:TextBox runat="server" CssClass="numericTextBox" SkinId="NumericTextBox" />
+
+<asp:DropDownList runat="server" CssClass="dropDownList" />
+<asp:DropDownList runat="server" CssClass="dropDownListSmall" SkinId="Small" />
+<asp:DropDownList runat="server" CssClass="dropDownListLarge" SkinId="Large" />
+
+<asp:CheckBox runat="server" CssClass="checkBox" />
+<asp:CheckBox runat="server" CssClass="labelValue" SkinId="Label" />
+
+<asp:CheckBoxList runat="server" CssClass="labelValue" />
+
+<asp:ImageButton runat="server" CssClass="searchButtonBg" SkinId="SearchImageIcon" />
+
+<asp:Button runat="server" CssClass="button" />
+
+<asp:GridView runat="server">
+    <AlternatingRowStyle CssClass="gridViewRowAlternate" />
+    <HeaderStyle CssClass="gridViewHeader" />
+    <RowStyle CssClass="gridViewRow" />
+    <PagerSettings Position="TopAndBottom" Mode="NumericFirstLast" NextPageText="Next" PreviousPageText="Previous" FirstPageText="First" LastPageText="Last" />
+    <PagerStyle CssClass="pagination" HorizontalAlign="Center" />
+</asp:GridView>
+
+<asp:FileUpload runat="server" CssClass="textBoxLarge" Size="42" />

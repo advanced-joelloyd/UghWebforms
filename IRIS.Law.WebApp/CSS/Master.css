@@ -1,0 +1,805 @@
+﻿
+/* QUICKMENU -  ID - 9324320106437841329 */
+/* PageLoading UpdateProgress - ID -107623502478 */
+
+
+.SelectedFolder
+{ 
+    font-weight:bold;
+    text-decoration:none; 
+    text-transform:capitalize;
+}
+
+.ajax__widetab_xp2 .ajax__tab_header
+{
+	font-family: verdana,tahoma,helvetica;
+	font-size: 11px; 
+}
+
+.ajax__widetab_xp2 .ajax__tab_tab
+{
+	background-color: #D6EBFF;
+	font-weight: bold;
+	padding: 6px 0px 4px;
+	width: 150px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center; 
+}
+ 
+.ajax__tab_xp2 .ajax__tab_hover .ajax__tab_tab
+{
+	background-color: #00549F;
+	color: White;
+	
+}
+
+
+.ajax__widetab_xp2 .ajax__tab_body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border: 1px solid #00549F;
+	padding: 8px;
+	background-color: #f8f8f8;
+}
+
+.ajax__widetab_xp2 .ajax__tab_active .ajax__tab_tab
+{
+	background-color: #00549F;
+	color: White;
+	font-weight: bold;
+}
+
+/* PageLoading UpdateProgress - ID -107623502478 */
+ 
+.PageLoading1
+{
+    position:absolute; 
+    left:40%;
+    top:20%;
+    width:300px; 
+    height:300px; 
+    background-image:url(../Images/PNGs/PageLoading.png); 
+    background-repeat:no-repeat; 
+    background-position:center;
+    z-index:3001;
+  
+   
+}
+
+.Progressbackground
+{
+   position:absolute; 
+   height:2000px; 
+   width:100%; 
+   background-color: Gray; 
+   filter: alpha(opacity=40); 
+   opacity: 0.4; 
+   z-index:1000; 
+}
+
+.loginBoldTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #082123;
+	text-indent: 0px;
+}
+.loginNormalTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+}
+.loginFormBg
+{
+	background-color: #f9f9f9;
+	border: thin solid #8cabcb;
+}
+
+
+
+
+/* QUICKMENU - ID - 9324320106437841329 */
+
+/*!!!!!!!!!!! MyCSSMenu Core CSS [Do Not Modify!] !!!!!!!!!!!!!*/
+.qmmc .qmdivider{display:block;font-size:1px;border-width:0px;border-style:solid;position:relative;z-index:1;}.qmmc .qmdividery{float:left;width:0px;}.qmmc .qmtitle{display:block;cursor:default;white-space:nowrap;position:relative;z-index:1;}.qmclear {font-size:1px;height:0px;width:0px;clear:left;line-height:0px;display:block;float:none !important;}.qmmc {position:relative;zoom:1;z-index:10;}.qmmc a, .qmmc li {float:left;display:block;white-space:nowrap;position:relative;z-index:1;}.qmmc div a, .qmmc ul a, .qmmc ul li {float:none;}.qmsh div a {float:left;}.qmmc div{visibility:hidden;position:absolute;}.qmmc li {z-index:auto;}.qmmc ul {left:-10000px;position:absolute;z-index:10;}.qmmc, .qmmc ul {list-style:none;padding:0px;margin:0px;}.qmmc li a {float:none}.qmmc li:hover>ul{left:auto;}#qm0 li {float:none;}#qm0 li:hover>ul{top:0px;left:100%;}
+
+
+/*!!!!!!!!!!! MyCSSMenu Styles [Please Modify!] !!!!!!!!!!!*/
+
+
+	/* MyCSSMenu 0 */
+
+	/*"""""""" (MAIN) Container""""""""*/	
+	#qm0	
+	{	
+		width:190px;
+		background-color:transparent;
+	}
+
+
+	
+
+
+	/*"""""""" (MAIN) Parent Items""""""""*/	
+	#qm0 .qmparent	
+	{	
+		
+		background-repeat:no-repeat;
+		background-position:9px 10px;
+		margin-top:3px;
+	}
+
+
+	/*"""""""" (MAIN) Hover State""""""""*/	
+	#qm0 a:hover	
+	{	
+		
+	}
+	
+	/*"""""""" (main) Rounded Items Hover""""""""*/	
+	#qm0 a:hover .qmritem span	
+	{	
+		
+	}
+
+
+	/*"""""""" (SUB) Container""""""""*/	
+	#qm0 div, #qm0 ul	
+	{	
+		padding:4px;
+		margin:-2px 0px 0px 21px;
+		background-color:transparent;
+		border-width:0px;
+		border-style:none;
+	}
+
+
+	
+
+
+	
+
+
+	/*"""""""" (SUB) Parent Items""""""""*/	
+	#qm0 div .qmparent	
+	{	
+	    
+	}
+
+
+	/*"""""""" (SUB) Active State""""""""*/	
+	body #qm0 div .qmactive, body #qm0 div .qmactive:hover	
+	{	
+		color:#eeeeee; 
+	}
+
+
+	
+
+
+	/*"""""""" (main) Rounded Items Content""""""""*/	
+	#qm0 .qmritemcontent	
+	{	
+		padding:0px 0px 0px 20px;
+	}
+
+
+	
+
+
+	/*"""""""" (sub) Rounded Items""""""""*/	
+	#qm0 div .qmritem span	
+	{	
+		border-color:#666666;
+		background-color:#eeeeee;
+	}
+
+
+	
+
+
+	/*"""""""" (sub) Rounded Items Content""""""""*/	
+	#qm0 div .qmritemcontent	
+	{	
+		padding:0px 0px 0px 4px;
+	}
+
+
+	/*"""""""" Sub Hover Fill Items [Static]""""""""*/	
+	#qm0 div .qmhoverfill	
+	{	 
+	    
+	}
+
+
+	/*"""""""" Custom Rule""""""""*/	
+	div#qm0 div div	
+	{	
+		margin:0px 0px 0px -6px;
+	}
+
+
+
+
+
+.errorMessageTooltip
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: solid 1px black;
+	background-color: #ffffcc;
+	width: 150px;
+	position: absolute;
+	display: none;
+	padding: 2px;
+	z-index: 999999;
+}
+
+.homeHeader
+{
+	text-align: center;
+	font-size: 17px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #082123;
+	text-indent: 0px;	
+}
+
+.toolTip
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.homeText
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #082123;
+	text-align: center;
+}
+
+.readonly
+{
+	font-size: 11px;
+	background-color: #ebebe4;
+	border: solid 1px #7f9db9;
+}
+
+
+
+.searchTabBg
+{
+	background-color: #145258;
+}
+
+.leftMenuBg
+{
+	background-color: #00549F;
+}
+
+.leftMenuMainItem
+{
+	background-color: #00549F;
+	border: solid #aabcd7 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #ffffff;
+	text-indent: 5px;
+	cursor:pointer;
+	height:22px;
+}
+
+.leftMenuMainItem a
+{
+	float:left;
+	width:80%;
+	text-align:left;
+}
+
+.leftMenuMainItem img
+{
+	width:8px;
+	height:8px;
+	float:right;
+	padding:3px 10px;
+}
+
+.leftMenuNormalTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	height: 20px;
+	text-align:left;
+	cursor:pointer;
+	text-decoration: none;
+}
+
+.leftMenuMouseOverBg
+{
+	background-color: #f8faff;
+	border: solid #c8d7ef 1px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	height: 18px;
+	cursor:pointer;
+	text-align:left;
+	text-decoration: none;
+}
+
+
+
+.boldTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	text-indent: 12px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.boldTxtMobile
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	padding-left: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+
+
+
+/* Disabled button CSS for Mozilla and safari browsers. */
+.buttonDisabled
+{
+	font-family: Arial, Helvetica, sans-serif; 
+	font-weight: bold;
+	color: #838383;
+	background-color: #D6EBFF;
+	width: 75px;
+	padding-left: 1px;
+}
+
+.buttonDisabled input
+{
+	background-color: #D6EBFF;
+	border: none;
+	width: 98%;
+	margin: 3px 0px 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+.buttonMobile
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	width: 75px;
+}
+
+.spacer
+{
+	width:5px;
+	float:right;
+	margin: 1em 0em;
+}
+
+.buttonSpacer
+{
+	float: right;
+	width: 3px;
+}
+
+.mandatoryField
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: Red;
+	vertical-align: top;
+}
+ 
+
+
+.collapseLabel
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	text-indent: 10px;
+}
+
+.conflictCheckBg
+{
+	background-color: #f9f9f9;
+	border: thin solid #8cabcb 1px;
+}
+
+/*Changed Button background colour*/
+.searchButtonBg
+{
+	background-color: #00549F;
+	margin-top: 1px;
+	margin-left: 5px;
+}
+
+.calendarButton
+{
+	padding-top: 3px;
+}
+ 
+
+/*************************/
+
+.textBox
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 150px;
+	font-size: 11px;
+}
+
+.textBoxSmall
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 70px;
+	font-size: 11px;
+}
+
+.textBoxLarge
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 300px;
+	font-size: 11px;
+}
+
+.textBoxError
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	background-color: #ffcccc;
+	font-size: 11px;
+	color: #000000;
+}
+
+.dropDownList
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 154px;
+	font-size: 11px;
+}
+
+.dropDownListSmall
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 55px;
+	font-size: 11px;
+	margin-top: 1px;
+}
+
+.dropDownListLarge
+{
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 300px;
+	font-size: 11px;
+}
+
+.checkBox
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+/*************************/
+
+.loginBoldTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #082123;
+	text-indent: 0px;
+}
+.loginNormalTxt
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+}
+.loginFormBg
+{
+	background-color: #f9f9f9;
+	border: thin solid #8cabcb;
+}
+
+
+
+.aMenuLink
+{
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+.disabledLink
+{
+	text-decoration: none;
+	color: #838383;
+	cursor: default;
+}
+
+
+.aSearchLink
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.errorMessage
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Red;
+}
+
+.successMessage
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Black;
+}
+
+.modalBackground
+{
+	background-color: Gray;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+
+
+.gridViewFooter
+{
+	font-weight: bold;
+	font-size: 11px;
+	vertical-align: text-top;
+	line-height: 22px;
+	font-family: Arial,Verdana;
+}
+
+.gridViewRow
+{
+	font-size: 11px;
+	vertical-align: text-top;
+	color: black;
+	line-height: 22px;
+	font-family: Arial;
+	text-align: left;
+	border: solid 1px #ffffff;
+	cursor:default;
+}
+
+.gridViewRowAlternate
+{
+	padding-left: 10px;
+	font-size: 11px;
+	vertical-align: text-top;
+	color: black;
+	line-height: 22px;
+	font-family: Arial;
+	background-color: #efefef;
+	text-align: left;
+	padding-left: 5px;
+	cursor:default;
+}
+
+.TitleSeparation
+{
+	height: 10px;
+}
+
+.labelValue
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+} 
+
+
+.sectionDivider
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #00549F;
+}
+
+.disabled
+{
+    background-color:#ebebe4;
+    color:black;
+}
+
+/* Tab Container */
+.ajax__tab_xp2
+{
+    height:auto;
+}
+
+.ajax__tab_xp2 .ajax__tab_header
+{
+	font-family: verdana,tahoma,helvetica;
+	font-size: 11px; 
+}
+
+.ajax__tab_xp2 .ajax__tab_body
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border: 1px solid #145258;
+	padding: 8px;
+	background-color: #f8f8f8;
+	
+}
+
+.ajax__tab_xp2 .ajax__tab_tab
+{
+	background-color: #D6EBFF;
+	font-weight: bold;
+	padding: 6px 0px 4px;
+	width: 135px;
+	padding-left:5px;
+	padding-right:5px;
+	text-align: center; 
+}
+
+.panel
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	border: 1px solid #999999;
+	padding: 8px;
+	background-color: #f8f8f8;
+}
+
+.fileUploadPanel
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	padding: 0px;
+	background-color: #f8f8f8;
+}
+
+/* Calendar Extendar */
+.AjaxCalendar .ajax__calendar_container
+{
+	border: 1px solid #646464;
+	background-color: #def1f3;
+	color: black;
+}
+
+.AjaxCalendar .ajax__calendar_other .ajax__calendar_day, .AjaxCalendar .ajax__calendar_other .ajax__calendar_year
+{
+	color: red;
+}
+
+.AjaxCalendar .ajax__calendar_hover .ajax__calendar_day, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_month, .AjaxCalendar .ajax__calendar_hover .ajax__calendar_year
+{
+	color: Purple;
+}
+
+.AjaxCalendar .ajax__calendar_active .ajax__calendar_day, .AjaxCalendar .ajax__calendar_active .ajax__calendar_month, .AjaxCalendar .ajax__calendar_active .ajax__calendar_year
+{
+	color: Purple;
+	font-weight: bold;
+}
+
+/* For Pagination 
+---------------------------------------------------------*/
+.pagination
+{
+	font-size: 11px;
+	color: Black;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tab Container with Wide Tabs */
+
+
+.numericTextBox
+{
+	text-align:right;
+	font-family: Arial, Helvetica, sans-serif;
+	vertical-align: top;
+	width: 70px;
+	font-size: 11px;
+}
+
+/*Password Strength Indicator*/
+
+.TextIndicator_TextBox_Strength1
+{
+     background-color:Gray;
+     color:White;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox_Strength2
+{
+     background-color:Gray;
+     color:Yellow;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox_Strength3
+{
+     background-color:Gray;
+     color: #FFCAAF;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox_Strength4
+{
+     background-color:Gray;
+     color:Aqua;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox_Strength5
+{
+     background-color:Gray;
+     color: #93FF9E;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.gridSpacing{ padding-right:10px;}
+.hidden { display: none;}

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+	<!-- 
+		displayText = The text to be displayed for the menu item 
+		link = The relative link to the page
+		users = Comma seperated user types that have access to the page
+		display = bool value used to show/hide links in the menu eg .(Edit pages wont appear in the menu)
+				  If this attribute is not specified the link will be displayed
+		enabled = bool value used to enable/disable the links. 
+				  Disabling the main menu item will also disable child links
+				  
+		USER TYPES :
+		1 = Staff
+		2 = Client
+		3 = Third Party		
+	-->
+	<mainMenuItem displayText="Home" link="/Home.aspx" users="1,2,3" enabled="true">
+	</mainMenuItem>
+	<mainMenuItem displayText="Client" users="1,2,3" enabled="true">
+		<subMenuItem displayText="Search" link="/Pages/Client/SearchClient.aspx" users="1,3" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Add" link="/Pages/Client/AddClient.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Edit" link="/Pages/Client/EditClient.aspx" users="1,3" enabled="true" display="false"></subMenuItem>
+    <!-- Used for Clients and referrers. Will link to edit client page -->
+    <subMenuItem displayText="My Details" link="/Pages/Client/EditClient.aspx?mydetails=true" users="2,3" enabled="true"></subMenuItem>
+	</mainMenuItem>
+	<mainMenuItem displayText="Matter" users="1,2,3" enabled="true">
+		<subMenuItem displayText="Search" link="/Pages/Matter/SearchMatter.aspx" users="1,3" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Add" link="/Pages/Matter/AddMatter.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Add" link="/Pages/Matter/EditMatter.aspx" users="1,2,3" enabled="true" display="false"></subMenuItem>
+    <!-- Used for Clients and referrers. Will link to search matter page -->
+    <subMenuItem displayText="My Matters" link="/Pages/Matter/SearchMatter.aspx" users="2" enabled="true"></subMenuItem>
+  </mainMenuItem>
+	<mainMenuItem displayText="Time Recording" users="1" enabled="true">
+		<subMenuItem displayText="Show Timesheet" link="/Pages/Time/ViewTimesheet.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Create Time Posting" link="/Pages/Time/AddTimeEntry.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Additional Time Details" link="/Pages/Time/AdditionalTimeDetails.aspx" users="1" display="false" enabled="true"></subMenuItem>
+	</mainMenuItem>
+	<mainMenuItem displayText="Document Mgmt" users="1,2,3" enabled="true">
+		<subMenuItem displayText="View Matter History" link="/Pages/DocMgmt/ViewMatterHistory.aspx" users="1,2,3" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Import Document" link="/Pages/DocMgmt/ImportDocument.aspx" users="1,2,3" display="false" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Reupload Document" link="/Pages/DocMgmt/ReuploadDocument.aspx" users="1,2" display="false" enabled="true"></subMenuItem>
+	</mainMenuItem>
+	<mainMenuItem displayText="Diary" users="1,2,3" enabled="true">
+		<subMenuItem displayText="Create Appointment" link="/Pages/Appointment/AppointmentDetails.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View Appointments" link="/Pages/Appointment/ViewAppointment.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Create Task" link="/Pages/Task/TaskDetails.aspx" users="1,2,3" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View All Tasks" link="/Pages/Task/ViewAllTasks.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View Matter Tasks" link="/Pages/Task/ViewMatterTasks.aspx" users="1,2,3" enabled="true"></subMenuItem>
+	</mainMenuItem>
+	<mainMenuItem displayText="Contact" users="1" enabled="true">
+		<subMenuItem displayText="Create Contact" link="/Pages/Contact/CreateContact.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Edit Contact" link="/Pages/Contact/EditContact.aspx" users="1" enabled="true" display="false"></subMenuItem>
+		<subMenuItem displayText="Attach Contact" link="/Pages/Contact/AddAssociationForMatter.aspx" users="1" enabled="true"></subMenuItem>
+    <subMenuItem displayText="Search Contact" link="/Pages/Contact/SearchContact.aspx" users="1" enabled="true"></subMenuItem>
+	</mainMenuItem>
+	<mainMenuItem displayText="Accounts" users="1,2" enabled="true">
+		<subMenuItem displayText="Client Cheque Reqs" link="/Pages/Accounts/ClientChequeRequest.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Office Cheque Reqs" link="/Pages/Accounts/OfficeChequeRequest.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Authorise Cheque Reqs" link="/Pages/Accounts/AuthoriseChequeRequests.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Add Draft Bill" link="/Pages/Accounts/AddDraftBill.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View Draft Bills" link="/Pages/Accounts/ViewDraftBills.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Financial Balances" link="/Pages/Accounts/ViewFinancialBalances.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Office Ledger" link="/Pages/Accounts/ViewOfficeBills.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Client Ledger" link="/Pages/Accounts/ViewClientBills.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Deposit Ledger" link="/Pages/Accounts/ViewDepositBills.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Disbursements Ledger" link="/Pages/Accounts/ViewDisbursementsLedger.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View Time Ledger" link="/Pages/Accounts/ViewTimeLedger.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="View Bills Ledger" link="/Pages/Accounts/ViewBillsLedger.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Printable Client Payment Cheque Request" link="/Pages/Accounts/PrintableClientChequeRequest.aspx" users="1" enabled="true" display="false"></subMenuItem>
+		<subMenuItem displayText="Printable Office Payment Cheque Request" link="/Pages/Accounts/PrintableOfficeChequeRequest.aspx" users="1" enabled="true" display="false"></subMenuItem>
+    <subMenuItem displayText="View My Bill" link="/Pages/Accounts/ViewBillsLedger.aspx?mybill=true" users="2" enabled="true"></subMenuItem>
+  </mainMenuItem>
+	<mainMenuItem displayText="Site Configuration" users="1" enabled="true">
+		<subMenuItem displayText="Contact Us" link="/Pages/Admin/ContactUsAdministration.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Support" link="/Pages/Admin/SupportAdministration.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Terms and Conditions" link="/Pages/Admin/TandCAdministration.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Privacy" link="/Pages/Admin/PrivacyAdministration.aspx" users="1" enabled="true"></subMenuItem>
+		<subMenuItem displayText="Home Page" link="/Pages/Admin/HomePageAdministration.aspx" users="1" enabled="true"></subMenuItem>
+  </mainMenuItem>
+  <mainMenuItem displayText="Site Styling" users="1" enabled="true">
+    <subMenuItem displayText="View All Styles" link="/Pages/SiteConfig/ViewStyle.aspx" users="1" enabled="true" ></subMenuItem>
+  </mainMenuItem>
+</menu>

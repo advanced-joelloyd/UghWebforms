@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRIS.Law.WebApp", "IRIS.Law.WebApp\IRIS.Law.WebApp.csproj", "{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRIS.Law.WebServices", "IRIS.Law.WebServices\IRIS.Law.WebServices.csproj", "{D56F1633-AE60-41FC-92B7-7FFA07573C68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Debug|x86.ActiveCfg = Debug|x86
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Debug|x86.Build.0 = Debug|x86
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Release|x86.ActiveCfg = Release|x86
+		{3177A21C-E807-46ED-8E21-9AB6B4F8FABF}.Release|x86.Build.0 = Release|x86
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Debug|x86.ActiveCfg = Debug|x86
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Debug|x86.Build.0 = Debug|x86
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Release|x86.ActiveCfg = Release|x86
+		{D56F1633-AE60-41FC-92B7-7FFA07573C68}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

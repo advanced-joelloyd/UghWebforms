@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IRIS.Law.WebServices.EarnerService" CodeBehind="EarnerService.svc.cs" %>

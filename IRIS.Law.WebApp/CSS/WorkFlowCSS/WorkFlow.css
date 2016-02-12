@@ -1,0 +1,68 @@
+﻿body
+{
+}
+fieldset
+{
+    border-collapse: collapse;
+    border-color: Red;
+    border: 0px;
+}
+legend
+{
+    color: #1e7b84;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+.hiddencol
+{
+    display: none;
+    height: 0;
+    width: 0;
+}
+.pagerInfo
+{
+    width: 100%;
+    font-size: 11px;
+    border: 0px;
+    border-style: none;
+}
+.pagerInfo th
+{
+    margin: 0px;
+    padding: 5px 3px 3px 5px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+    height: 20px;
+    width: auto;
+    border: 0px;
+    font-weight: bold;
+    border-style: none;
+}
+.pagerInfo tr
+{
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 30px;
+    border-style: none;
+}
+.pagerInfo tr.alt
+{
+    background-color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    height: 30px;
+    border-style: none;
+}
+.pagerInfo td
+{
+    padding: 5px 2px 2px 5px;
+    vertical-align: middle;
+    border-style: none;
+}
+.pagerInfo td.right
+{
+    vertical-align: top;
+    border-style: none;
+}

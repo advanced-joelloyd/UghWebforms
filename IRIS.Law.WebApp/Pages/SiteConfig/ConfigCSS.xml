@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  
+  <wizard>
+    <wizardname>General</wizardname>
+
+
+    
+
+<class>
+    <classname>.MainContainer</classname>
+    <userdefinedclassname>Main Container</userdefinedclassname>
+    <property>
+      <propertyname>background-color</propertyname>
+      <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+      <colorpicker>1</colorpicker>
+      <image>0</image>
+    </property>
+  </class>
+    <class>
+      <classname>body</classname>
+      <userdefinedclassname>Body</userdefinedclassname>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Body Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <!--<class>
+      <classname>a</classname>
+      <userdefinedclassname>Body General Links</userdefinedclassname>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>-->
+    
+<class>
+    <classname>.topBg</classname>
+    <userdefinedclassname>Logo Background Color</userdefinedclassname>
+    <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+  </class>
+
+
+    <class>
+      <classname>.HeaderTab</classname>
+      <userdefinedclassname>Header Bar</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-size</propertyname>
+        <userdefinedpropertyname>Font Size</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.HeaderTab a</classname>
+      <userdefinedclassname>Header Links</userdefinedclassname>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    
+    
+
+    <class>
+      <classname>.FooterTab</classname>
+      <userdefinedclassname>Footer Bar</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      
+    </class>
+    <!--<class>
+      <classname>.FooterTab a</classname>
+      <userdefinedclassname>Footer Links</userdefinedclassname>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>-->
+    <class>
+      <classname>.BottomLabels a</classname>
+      <userdefinedclassname>Bottom Links</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-size</propertyname>
+        <userdefinedpropertyname>Font Size</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>white-space</propertyname>
+        <userdefinedpropertyname>White Space</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.logo</classname>
+      <userdefinedclassname>Logo</userdefinedclassname>
+      <property>
+        <propertyname>background-image</propertyname>
+        <userdefinedpropertyname>Image</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>1</image>
+      </property>
+    </class>
+    
+  </wizard>
+
+
+  <wizard>
+    <wizardname>Contents</wizardname>
+
+
+    <class>
+      <classname>.gridViewHeader, .gridViewHeader a:link, .gridViewHeader a:visited</classname>
+      <userdefinedclassname>Grid Header</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-size</propertyname>
+        <userdefinedpropertyname>Font Size</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.ajax__tab_xp2 .ajax__tab_tab</classname>
+      <userdefinedclassname>Tab Control (UnSelected)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property> 
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.ajax__tab_xp2 .ajax__tab_active .ajax__tab_tab</classname>
+      <userdefinedclassname>Tab Control (Active)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.ajax__tab_xp2 .ajax__tab_hover .ajax__tab_tab</classname>
+      <userdefinedclassname>Tab Control (Hover)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    
+    
+
+    <class>
+      <classname>.sectionHeader</classname>
+      <userdefinedclassname>Section Header</userdefinedclassname>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-size</propertyname>
+        <userdefinedpropertyname>Font Size</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.bodyTab</classname>
+      <userdefinedclassname>Body Tab</userdefinedclassname>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-size</propertyname>
+        <userdefinedpropertyname>Font Size</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.button</classname>
+      <userdefinedclassname>Button Border</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+    <class>
+      <classname>.button input</classname>
+      <userdefinedclassname>Button</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Text Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+  </wizard>
+
+
+    <wizard>
+    <wizardname>Menu</wizardname> 
+    
+    
+    <class>
+      <classname>#qm0 a</classname>
+      <userdefinedclassname>Main Items (Text)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-family</propertyname>
+        <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Font Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>border-color</propertyname>
+        <userdefinedpropertyname>Border Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>font-weight</propertyname>
+        <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+        <colorpicker>0</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+
+    
+
+
+<class>
+    <classname>#qm0 .qmritem span</classname>
+    <userdefinedclassname>Main Items (Background)</userdefinedclassname>
+  <property>
+    <propertyname>background-color</propertyname>
+    <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+    <colorpicker>1</colorpicker>
+    <image>0</image>
+  </property>
+  <property>
+    <propertyname>border-color</propertyname>
+    <userdefinedpropertyname>Border Colour</userdefinedpropertyname>
+    <colorpicker>1</colorpicker>
+    <image>0</image>
+  </property>
+  </class>
+
+
+
+<class>
+  <classname>body #qm0 .qmactive, body #qm0 .qmactive:hover</classname>
+  <userdefinedclassname>Main Items (Hover-Text)</userdefinedclassname>
+  <property>
+    <propertyname>font-weight</propertyname>
+    <userdefinedpropertyname>Font Weight</userdefinedpropertyname>
+    <colorpicker>0</colorpicker>
+    <image>0</image>
+  </property>
+  <property>
+    <propertyname>font-family</propertyname>
+    <userdefinedpropertyname>Font Family</userdefinedpropertyname>
+    <colorpicker>0</colorpicker>
+    <image>0</image>
+  </property>
+  <property>
+    <propertyname>color</propertyname>
+    <userdefinedpropertyname>Font Colour</userdefinedpropertyname>
+    <colorpicker>1</colorpicker>
+    <image>0</image>
+  </property>
+</class>
+    
+<class>
+    <classname>body #qm0 .qmactive .qmritem span, body #qm0 .qmactive:hover .qmritem span</classname>
+    <userdefinedclassname>Main Items (Hover-Background)</userdefinedclassname>
+  <property>
+    <propertyname>background-color</propertyname>
+  <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+  <colorpicker>1</colorpicker>
+  <image>0</image>
+  </property>
+  <property>
+    <propertyname>border-color</propertyname>
+    <userdefinedpropertyname>Border Colour</userdefinedpropertyname>
+    <colorpicker>1</colorpicker>
+    <image>0</image>
+  </property>
+  </class>
+
+    <class>
+      <classname>#qm0 div a, #qm0 ul a</classname>
+      <userdefinedclassname>Sub Items (Text)</userdefinedclassname> 
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Font Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+
+    <class>
+      <classname>.SubMenuBackground</classname>
+      <userdefinedclassname>Sub Items (Background)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property> 
+    </class>
+
+    <class>
+      <classname>#qm0 div a:hover, #qm0 ul a:hover</classname>
+      <userdefinedclassname>Sub Items (Hover)</userdefinedclassname>
+      <property>
+        <propertyname>background-color</propertyname>
+        <userdefinedpropertyname>Background Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+      <property>
+        <propertyname>color</propertyname>
+        <userdefinedpropertyname>Font Colour</userdefinedpropertyname>
+        <colorpicker>1</colorpicker>
+        <image>0</image>
+      </property>
+    </class>
+
+    
+
+    
+
+
+  </wizard>
+</config>

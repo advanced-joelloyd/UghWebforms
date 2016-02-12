@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="IRIS.Law.WebServices.IWSProvider.BankServiceIWS" CodeBehind="BankServiceIWS.svc.cs" %>

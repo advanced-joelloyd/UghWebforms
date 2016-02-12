@@ -1,0 +1,8 @@
+<p style="text-align: center; margin: 0px"><span style="font-weight: bold">Welcome to {0}</span></p><br />
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td><br/></td>
+<td>
+<p class="loginNormalTxt" style="text-align: center">Monitor the progress of your case from the comfort of your own home or office, 24 hours a day, 7 days a week.</p>
+<p class="loginNormalTxt" style="text-align: center">Secure instant access to the latest status, regardless of location or time of day.</p></td></tr></tbody></table>

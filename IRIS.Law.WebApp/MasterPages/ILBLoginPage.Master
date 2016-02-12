@@ -1,0 +1,216 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ILBLoginPage.master.cs"
+    Inherits="IRIS.Law.WebApp.MasterPages.ILBLoginPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+	<link id="MasterLink" href="~/CSS/Master.css" rel="Stylesheet" type="text/css" runat="server" />
+    <link href="../CSS/niftyCorners.css" rel="Stylesheet" type="text/css" />
+	<link id="Link2" href="~/CSSHandler.ashx" rel="stylesheet" type="text/css" runat="server" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <script language="JavaScript">
+        function Maximize()
+        {
+          window.moveTo( 0, 0 );
+          window.resizeTo( window.screen.availWidth, window.screen.availHeight );
+        }
+        </script>
+    
+</head>
+<body onload="Maximize()">
+
+
+    <form id="form1" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" CombineScripts="false" ScriptMode="Release">
+        <Scripts>
+            <asp:ScriptReference Path="~/Javascript/jquery-1.3.2.js" />
+            <asp:ScriptReference Path="~/Javascript/Common.js" />
+            <asp:ScriptReference Path="~/Javascript/Validation.js" />
+            <asp:ScriptReference Path="~/Javascript/Bubble-Tooltip.js" />
+            <asp:ScriptReference Path="~/Javascript/niftycube.js" />
+            
+        </Scripts>
+    </ajaxToolkit:ToolkitScriptManager>
+    <div id="bubble_tooltip" class="errorMessageTooltip">
+    </div>
+    
+    <script type="text/javascript">
+
+
+	    function pageload() {
+	        obj = document.getElementById('logo');
+
+	        var browser = navigator.appName;
+	        var img;
+
+	        if (browser == "Microsoft Internet Explorer") {
+	            img = getStyle('logo', 'backgroundImage');
+	        }
+	        else {
+	            img = getStyle('logo', 'background-Image');
+	        }
+
+	        img = img.replace("url(", "").replace(")", "");  
+
+	        var length = img.length;
+
+	        if (browser == "Microsoft Internet Explorer") {
+	            img = img.substring(1, length - 1);
+	        }
+ 
+	        Trobj = document.getElementById('logoHeight');
+
+	        //if (browser == "Netscape") 
+	        
+	        //{
+	        var OldHtml = Trobj.innerHTML;
+
+	        var NewHeight = getImgSize(img) + 10 + "px";
+	            
+	            if (getImgSize(img) >  0) {
+	                Trobj.innerHTML = OldHtml + "<div style='height:" + NewHeight + "; width:100%'>&nbsp;</div>";
+	            }
+	            else {
+	                Trobj.innerHTML = OldHtml + "<div style='width:100%'><img src='"+img+"'></div>";
+	            }
+	        //}
+	        //else 
+	        //{
+	        //    Trobj.style.height = getImgSize(img) + 10 + "px";
+	        //}
+	    }
+
+         function getImgSize(imgSrc) {
+             var newImg = new Image();
+             newImg.src = imgSrc;
+             var IndexSrc = newImg.src;
+             var Start = IndexSrc.indexOf('%22');
+
+             if (Start > 0) {
+
+                 var End = IndexSrc.lastIndexOf('%22');
+
+                 newImg.src = IndexSrc.substring(Start + 3, End);
+
+             }
+             
+             var height = newImg.height;
+             var width = newImg.width;
+             
+             window.setTimeout(newImg, 0); 
+
+             return height;
+             
+         }
+     
+         function getStyle(el, styleProp) {
+             var x = document.getElementById(el);
+             if (x.currentStyle)
+                 var y = x.currentStyle[styleProp];
+             else if (window.getComputedStyle)
+                 var y = document.defaultView.getComputedStyle(x, null).getPropertyValue(styleProp);
+             return y;
+         }
+
+
+         $(document).ready(pageload);
+
+    </script>
+
+    
+    
+    <div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td style="height: 500px" align="center" valign="middle">
+                    <table width="700px" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td style="width: 100%" colspan="4" class="topBg">
+                                <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                    <tr style="height: 80px">
+                                        <td style="width: 1%;">
+                                            &nbsp;
+                                        </td>
+                                        <td class="logo" id="logo" style="width: 100%;">
+                                            <div id="logoHeight"></div>
+                                        </td>
+                                        <td style="width: 74%;">
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="height: 5px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 100%">
+                                <asp:Panel ID="_PnlTop" runat="server" ScrollBars="None" Style="width: 100%;" CssClass="MainContainer">
+                                    <div style="padding: 2px; padding-left: 10px; padding-right: 10px;">
+                                        <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                            <tr>
+                                                <!-- ROW -->
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- ROW -->
+                            <td style="vertical-align: top; padding-left: 2pt; padding-right: 2pt" class="MainContainer">
+                                <asp:Panel ID="_pnlMain" runat="server" ScrollBars="None" Style="width: 100%; background-color: white">
+                                    <asp:ContentPlaceHolder ID="_cphMain" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; width: 100%">
+                                <asp:Panel ID="_PnlBottom" runat="server" ScrollBars="None" Style="width: 100%;" CssClass="MainContainer">
+                                    <div style="padding: 2px; padding-left: 10px; padding-right: 10px">
+                                        <table cellpadding="0" cellspacing="0" style="width: 100%">
+                                            <tr>
+                                                <!-- ROW -->
+                                                <td class="BottomLabels">
+                                                    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="vertical-align: bottom">
+                                                        <tr>
+                                                            <td>
+                                                                <div style="text-align: left;">
+                                                                    <a runat="server" ID="companyHyperlink" href="k" target="_blank" class="footerTxtLogin">xxxx</a></div>
+                                                            </td>
+                                                            <td>
+                                                                <div style="text-align: right;">
+                                                                    <a runat="server" ID="copyrightHyperlink" href="">xxxx</a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </asp:Panel>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
